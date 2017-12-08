@@ -8,7 +8,7 @@ class App extends Component {
     constructor(props) {
         super();
         this.props = props;
-        this.state = {data: {quote:{open:0},code:'a2m'}}
+        this.state = {data: {quote:{open:0},code:'wbc'}}
     }
 
 

@@ -59,12 +59,7 @@ shareRouter.route('/shares/:shareId')
                 res.json(response.data)
             }
         );
-        // Share.findById(req.params.shareId, function (err, share) {
-        //     if (err)
-        //         res.status(500).send(err);
-        //     else
-        //         res.json(share);
-        // });
+
     });
 
 app.use('/api', shareRouter);
