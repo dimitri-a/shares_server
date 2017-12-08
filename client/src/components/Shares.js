@@ -21,13 +21,12 @@ export default class Shares extends Component {
     }
 
     render() {
-console.log('this.state.data',this.state.data);
 
         return (
             <div className="App">
                 <ul>
-                    <li> Code:{this.state.data.symbol}</li>
-                    <li> Opening price:{this.state.data.quote.open}</li>
+                    <li> Code</li>
+                    <li> Opening price</li>
                 </ul>
 
             </div>
