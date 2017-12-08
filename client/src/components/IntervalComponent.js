@@ -20,7 +20,7 @@ export default class IntervalComponent extends Component {
     }
     //use ES6!!!!
     componentDidMount() {
-        setInterval(()=>{
+        this.intervalId=setInterval(()=>{
             this.timer();
         },2000)
     }
