@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import './App.css';
 import Shares from './components/Shares';
-import axios from 'axios';
+import IntervalComponent from './components/IntervalComponent'
+import Clock from './components/Clock'
+
 
 class App extends Component {
 
@@ -13,10 +15,10 @@ class App extends Component {
 
 
     render() {
-        let display = [];
         return (
             <div className="App">
-                <Shares data={this.state.data}></Shares>
+                <IntervalComponent></IntervalComponent>
+                {/*<Shares></Shares>*/}
             </div>
         )
     }
