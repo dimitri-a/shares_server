@@ -46,15 +46,13 @@ shareRouter.route('/shares/:shareId')
         console.log('server.js:.get');
         console.log('server.js:hello there shareid=', req.params.shareId);
 
-      // var url ='https://quoteapi.com/api/v4/symbols/' + req.params.shareId + '.asx?appID=af5f4d73c1a54a33&averages=1&liveness=delayed';
-
         var url = 'https://query1.finance.yahoo.com/v8/finance/chart/nab.AX?range=1d&includePrePost=false&interval=2m&corsDomain=au.finance.yahoo.com&.tsrc=finance';
         console.log('url', url);
 
-        axios.get(url).then((response) =>
-        {
-               var result = response.data.chart.result["0"].indicators.quote["0"].close["0"];
-                res.json(result)
+        axios.get(url).then((response) => {
+            //todo figure out what the exact property value is for the share
+            var result = response.data.chart.result["0"].indicators.quote["0"].close["0"];
+            res.json(result)
         });
     });
 

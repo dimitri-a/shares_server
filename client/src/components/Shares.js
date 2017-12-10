@@ -11,7 +11,7 @@ export default class Shares extends Component {
     getData() {
         console.log('getdata on the client');
         axios.get('http://localhost:3000/api/shares/wbc').then((response) => {
-            console.log('client.js:axios call',response.data);
+            console.log('client.js:axios call, result =',response.data);
         })
     }
 
@@ -20,6 +20,7 @@ export default class Shares extends Component {
 
         return (
             <div className="App">
+
 
             </div>
         )
