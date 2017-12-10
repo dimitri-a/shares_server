@@ -46,7 +46,7 @@ shareRouter.route('/shares/:shareId')
         console.log('server.js:.get');
         console.log('server.js:hello there shareid=', req.params.shareId);
 
-        var url = 'https://query1.finance.yahoo.com/v8/finance/chart/nab.AX?range=1d&includePrePost=false&interval=2m&corsDomain=au.finance.yahoo.com&.tsrc=finance';
+        var url = 'https://query1.finance.yahoo.com/v8/finance/chart/'+req.params.shareId +'.AX?range=1d&includePrePost=false&interval=2m&corsDomain=au.finance.yahoo.com&.tsrc=finance';
         console.log('url', url);
 
         axios.get(url).then((response) => {

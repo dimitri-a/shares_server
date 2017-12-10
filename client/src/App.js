@@ -10,7 +10,6 @@ class App extends Component {
     constructor(props) {
         super();
         this.props = props;
-        //this.state = {data: {quote:{open:0},code:'wbc'}}
     }
 
 
@@ -19,6 +18,7 @@ class App extends Component {
             <div className="App">
                 {/*<IntervalComponent></IntervalComponent>*/}
                 <Shares code="TLS"></Shares>
+                <Shares code="NAB"></Shares>
             </div>
         )
     }
