@@ -18,7 +18,7 @@ class App extends Component {
         return (
             <div className="App">
                 {/*<IntervalComponent></IntervalComponent>*/}
-                <Shares></Shares>
+                <Shares code="TLS"></Shares>
             </div>
         )
     }
