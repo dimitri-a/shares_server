@@ -11,7 +11,6 @@ export default class Shares extends Component {
     }
 
     getData() {
-
         let { code }  = this.props;
         console.log('getdata on the client',code);
         axios.get('http://localhost:3000/api/shares/' + code).then((response) => {
