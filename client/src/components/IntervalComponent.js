@@ -20,9 +20,13 @@ export default class IntervalComponent extends Component {
     }
     //use ES6!!!!
     componentDidMount() {
-        this.intervalId=setInterval(()=>{
-            this.timer();
-        },2000)
+        console.log('componentdidmount',this.state.currentCount);
+
+        this.intervalId=setInterval( () =>
+        {
+            this.timer()
+        }
+        ,1000)
     }
 
     componentWillUnmount(){
